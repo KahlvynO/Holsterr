@@ -1,0 +1,287 @@
+body {
+    margin: 0px auto;
+    margin-top: 40px;
+    padding: 0px;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+    background-color: #f9f4e8;
+    width: 80%;
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding-left: 0px;
+}
+
+li {
+    text-decoration: none;
+    color: #525252;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+li:hover {
+    color: black;
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+    color: #525252;
+    font-size: 15px;
+}
+
+a:hover {
+    color: black;
+    transition: 0.3s;
+}
+
+#hamburger_menu {
+    display: none;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+#left_image {
+    cursor: pointer;
+}
+
+#left_span {
+    background-image: linear-gradient(to right, #eaae51, #ea5472);
+    color: white;
+    background-color: white;
+    font-size: 10px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+button {
+    color: white;
+    background-color: #4977ea;
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+    font-weight: 500;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3a60be;
+    transition: 0.3s;
+}
+
+#right {
+    display: flex;
+    align-items: center;
+}
+
+#right span {
+    color: #525252;
+    font-size: 15px;
+}
+
+#content {
+    display: flex;
+    margin-top: 80px;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    max-width: 60%;
+    font-weight: 700;
+}
+
+#hero_text p {
+    max-width: 60%;
+    color: #525252;
+}
+
+.h_image {
+    width: 300px;
+    position: absolute;
+}
+
+#hero_image {
+    position: relative;
+    width: 30%;
+}
+
+.img1 {
+    transform: rotate(-35deg);
+}
+.img2 {
+    transform: rotate(-25deg);
+}
+.img3 {
+    transform: rotate(-15deg);
+}
+
+input {
+    padding: 15px;
+    width: 38%;
+    border: none;
+    border-radius: 3px;
+}
+
+#small_print {
+    display: flex;
+}
+
+#small_print img {
+    width: 20px;
+}
+
+#small_print p {
+    color: #525252;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+footer {
+    display: flex;
+    margin: 80px 0px 50px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer #CTA {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#cta_text p {
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+
+#cta_text #bottom {
+    font-weight: bold;
+}
+
+#cta_text #top {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+}
+
+#footer_link {
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#footer_link:hover {
+    color: #525252;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 1030px) {
+
+#class_list, #right {
+    display: none;
+}
+
+#hamburger_menu {
+    display: unset;
+}
+
+#content {
+    flex-direction: column-reverse;
+    gap: 380px;
+    margin-top: 35px;
+}
+
+h1 {
+    max-width: 90%;
+    font-size: 3.5rem;
+}
+
+#hero_image {
+    margin-left: 30%;
+}
+
+#hero_section {
+    margin: 0px auto;
+}
+
+.h_image {
+    width: 370px;
+}
+
+#hero_text p {
+    max-width: 90%;
+}
+
+}
+
+@media screen and (max-width: 650px) {
+    .h_image {
+        width: 250%;
+    }
+
+    #hero_image {
+        margin-left: 20%;
+    }
+
+    #content {
+        gap: 380px;
+        margin-top: 45px;
+    }
+
+    h1 {
+        max-width: 95%;
+        font-size: 3rem;
+    }
+
+    input {
+        width: 94%;
+        display: block;
+    }
+
+    button {
+        margin-top: 15px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    h1 {
+        max-width: 90%;
+        font-size: 2.5rem;
+    }
+
+    #content {
+        gap: 280px;
+    }
+
+    .h_image {
+        width: 240px;
+    }
+
+    input {
+        width: 90%
+    }
+}
